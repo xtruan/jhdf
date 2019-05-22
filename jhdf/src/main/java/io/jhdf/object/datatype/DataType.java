@@ -52,7 +52,7 @@ public abstract class DataType {
 			case 3: // String
 				return new StringData(bb);
 			case 4: // Bit field
-				throw new UnsupportedHdfException("Bit field data type is not yet supported");
+				return new BitFieldDataType(bb);
 			case 5: // Opaque
 				throw new UnsupportedHdfException("Opaque data type is not yet supported");
 			case 6: // Compound
